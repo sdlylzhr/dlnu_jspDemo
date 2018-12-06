@@ -15,9 +15,9 @@ import java.util.List;
  */
 public class UserDao {
 
-    // 获取数据库中的所有用户的信息
-    public List<User> getAllUsers(){
 
+    public List<User> getAllUsers(){
+        // 获取数据库中的所有用户的信息
         List<User> list = new ArrayList<>();
 
         Connection connection = null;

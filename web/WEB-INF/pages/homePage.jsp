@@ -14,6 +14,17 @@
 </head>
 <body>
 
+<c:if test="${username == null}" var="result">
+
+<div>
+    <a href="/loginview">登录</a>
+    <a href="/register">注册</a>
+</div>
+</c:if>
+
+<c:if test="${result == false}">
+    <a href="#">${username}</a>
+</c:if>
 
 <div>
 
