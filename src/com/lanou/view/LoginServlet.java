@@ -40,6 +40,7 @@ public class LoginServlet extends HttpServlet {
                 // 保存用户信息
                 HttpSession session = request.getSession();
                 session.setAttribute("username", uname);
+
                 response.sendRedirect("/home");
             } else {
                 System.out.println("登录失败！用户名或密码错误");
