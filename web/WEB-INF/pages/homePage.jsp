@@ -18,7 +18,7 @@
 
 <div>
     <a href="/loginview">登录</a>
-    <a href="/register">注册</a>
+    <a href="/regview">注册</a>
 </div>
 </c:if>
 

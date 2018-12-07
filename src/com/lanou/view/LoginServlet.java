@@ -22,9 +22,11 @@ public class LoginServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        // 获取前端发送过来的用户名和密码
         String uname = request.getParameter("uname");
         String password = request.getParameter("pwd");
 
+        // 和数据库做匹配
         try {
             Connection connection = JdbcUtils.getConnection();
 
